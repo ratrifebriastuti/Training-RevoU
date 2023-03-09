@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RAF Travel Agent's</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container_header">
+                <div class="logo">
+                    <img class="logo_image" src="C:\Users\febri\Desktop\Training\Assignment\Logo.jpg" alt="" />
+                </div>
+                <navbar>
+                <div class="navbar">
+                    <a href="#heronew">Home</a>
+                    <a href="#packagenew">Our Package</a>
+                    <a href="#callusnew">Call Us</a>
+                </div>
+                </navbar>
+            </div>
+        </header>
+        <hr>
+   
+        <main>
+            <section id="heronew"></section>
+            <div class="container_main">
+                <div class="Hero">
+                    <h1 class="hero_title">Your Trusted Travel Agent's</h1>
+                    <h2 class="hero_caption">Your happiness is our happiness </h2>
+                </div>    
+                <br>
+                <div class="container_a_b">
+                <div class="container_mainA">
+                    <div class="testimoni">
+                        <img class="testimoni_image" src="C:\Users\febri\Desktop\Training\Assignment\Banner 1.jpg" alt="" />
+                        <img class="testimoni_image" src="C:\Users\febri\Desktop\Training\Assignment\image 2.jpg" alt="" />
+                        <img class="testimoni_image" src="C:\Users\febri\Desktop\Training\Assignment\image 3.jpg" alt="" />
+                        <br>
+
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+    
+                                function plusDivs(n) {
+                                    showDivs((slideIndex += n));
+                                }
+    
+                                function showDivs(n) {
+                                    var i;
+                                    var imglist = document.getElementsByClassName("testimoni_image");
+                                    if (n > imglist.length) slideIndex = 1;
+                                    else if (n < 1) slideIndex = imglist.length;
+    
+                                    for(i = 0; i < imglist.length; i++) {
+                                    imglist[i].style.display = "none";
+                                    }
+                                    imglist[slideIndex-1].style.display="block";
+                                }
+    
+                                setInterval (() => {
+                                    plusDivs(1)
+                                }, 1000)
+                            </script>
+                        <p class="testimoni_caption">
+                            "Liburan jadi menyenangkan bersama Travel Agentku"
+                        </p>
+                        <div class="container_testimoni_user">
+                            <div class="user_foto">
+                                <img class="user_foto" src="C:\Users\febri\Desktop\Training\Assignment\user.png" alt="" />
+                            </div>
+                            <div class="user_name">
+                                <h1>Florence Hughes</h1>
+                                <p>Ibu rumah tangga, 28</p>
+                            </div>
+                        </div>
+                        <hr width="90">
+                        <br>
+                        <br>
+                        <div>
+                            <div class="benefit_message_title">
+                                Enjoy Our Facilities! 
+                            </div>
+                            <div class="benefit_container">
+                                <h1 class="benefit_number">1</h1>
+                                <h2 class="benefit_message">Discount up to 50%</h2>
+                            </div>
+                            <div class="benefit_container">
+                                <h1 class="benefit_number">2</h1>
+                                <h2 class="benefit_message">Comfortable transportation</h2>
+                            </div>
+                            <div class="benefit_container">
+                                <h1 class="benefit_number">3</h1>
+                                <h2 class="benefit_message">Free snack and water</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_mainB">
+                    
+
+                    <div class="contactus_title">
+                        <h1>Contact Us</h1>
+                    </div>
+                    <div class="contuctus_desc">
+                        <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                    </div>
+                    <div class="container_contuctus_data">
+                        <form name="message-form" onsubmit="return Validateform()">
+                        <div class="contuctus_nama">
+                            <label for="Nama" name="Nama">Your Name</label>
+                            <br>
+                            <input class="input" type="text" id="Nama" />
+                        </div>
+                        <br>
+                        <div class="contuctus_email">
+                            <label for="Email" name="alamatemail">Email Address</label>
+                            <br>
+                            <input class="input" type="text" id="Email" />
+                        </div>
+                        <br>
+                        <div class="contuctus_interested">
+                            <label for="Interested">What are you interested in?</label>
+                            <br>
+                            <select id="Interested">
+                                <option value="Price">Price</option>
+                                <option value="Facilities">Facilities</option>
+                                <option value="Benefit">Benefit</option>
+                                <option value="Destination">Destination</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="submit">
+                            <input type="submit" value="SEND" />
+                        </div>
+                        </form>
+
+                        <script>
+                            function Validateform() {
+                                var name = document.forms["message-form"]["Nama"];
+
+                                return false;
+                            }
+
+                            function Validateform() {
+                                var name = document.forms["message-form"]["alamatemail"];
+
+                                return false;
+                            }
+
+                        </script>
+                    </div>
+                </div>
+                </div>
+                <section id="packagenew">
+                <div class="Our_Package">
+                    <h1>Our Package</h1>
+                </div>
+                </section>
+                <div class="Destination_row1">
+                    <div class="country">
+                        <div class="Bali_image">
+                            <img class="destination_pic" src="C:\Users\febri\Desktop\Training\Assignment\Bali Icon.png" />
+                        </div>
+                        <div class="Bali_caption">
+                            <h1 class="country_title">BALI</h1>
+                            <p class="country_desc">
+                                Travel dan wisata di Bali.
+                                Kunjungi cagar budaya dan wisata yang menarik
+                            </p>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div class="Japan_image">
+                            <img class="destination_pic" src="C:\Users\febri\Desktop\Training\Assignment\Japan.png" />
+                        </div>
+                        <div class="Japan_caption">
+                            <h1 class="country_title">JAPAN</h1>
+                            <p class="country_desc">
+                                Travel dan wisata di Japan.
+                                Kunjungi cagar budaya dan wisata yang menarik
+                            </p>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div class="Singapore_image">
+                            <img class="destination_pic" src="C:\Users\febri\Desktop\Training\Assignment\Singapore icon.jpg" />
+                        </div>
+                        <div class="Singapore_caption">
+                            <h1 class="country_title">SINGAPORE</h1>
+                            <p class="country_desc">
+                                Travel dan wisata di Singapore.
+                                Kunjungi cagar budaya dan wisata yang menarik
+                            </p>
+                        </div>     
+                    </div>
+                </div>
+                <br>
+                <hr width="150">
+                <br>
+                <div class="Destination_row2">
+                    <div class="country">
+                        <div class="Bandung_image">
+                            <img class="destination_pic" src="C:\Users\febri\Desktop\Training\Assignment\Bandung.png" />
+                        </div>
+                        <div class="Bandung_caption">
+                            <h1 class="country_title">BANDUNG</h1>
+                            <p class="country_desc">
+                                Travel dan wisata di Bandung.
+                                Kunjungi cagar budaya dan wisata yang menarik
+                            </p>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div class="Surabaya_image">
+                            <img class="destination_pic" src="C:\Users\febri\Desktop\Training\Assignment\Surabaya icon.jpg" />
+                        </div>
+                        <div class="Surabaya_caption">
+                            <h1 class="country_title">SURABAYA</h1>
+                            <p class="country_desc">
+                                Travel dan wisata di Surabaya.
+                                Kunjungi cagar budaya dan wisata yang menarik
+                            </p>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <div class="Yogyakarta_image">
+                            <img class="destination_pic" src="C:\Users\febri\Desktop\Training\Assignment\Yogyakarta icon.png" />
+                        </div>
+                        <div class="Yogyakarta_caption">
+                            <h1 class="country_title">YOGYAKARTA</h1>
+                            <p class="country_desc">
+                                Travel dan wisata di Yogyakarta.
+                                Kunjungi cagar budaya dan wisata yang menarik
+                            </p>
+                        </div>     
+                    </div>
+                </div>
+                <hr>
+                <section id="callusnew">
+                    <div class="closing_argument">
+                        <h1 class="closing_argument_title">Escape to Your Dream Vacation</h1>
+                    </div>
+                    <div class="closing_argument_desc">
+                        <p>Nikmati liburan tak terlupakan bersama RAF Travel Agent's</p>
+                    </div>
+                    <br>
+                    <div class="closing_argument_button">
+                        <input class="button_end" type="button" value="Call to Action">
+                    </div>
+                </section>
+                </div>
+            </div>
+        </main>
+        <br>
+        <hr>
+        <footer>
+            <div class="footer_container">
+                <div class="footer_name">
+                    <h1 class="footer_text">RAF TRAVEL AGENT'S</h1>
+                </div>
+                <div class="footer_desc">
+                    <h6>2023</h6>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
